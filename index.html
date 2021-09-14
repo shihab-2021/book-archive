@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #D1F2EB ;
+        }
+        #spinner {
+            display: none;
+        }
+    </style>
+    <title>Book Archive</title>
+</head>
+<body>
+    <!-- Header Section Start  -->
+    <header class="mt-1 mb-4 text-center">
+        <h1 class="text-danger">Book Archive</h1>
+        <h5 class="text-success">Search Your Favorite Books</h3>
+    </header>
+    <!-- Header Section End  -->
+    <!-- Main Section Start  -->
+    <main class="container py-1 mb-5">
+        <div>
+            <!-- div for search input  -->
+            <div class=" container input-group mb-5 w-50">
+                <input id="search-text" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="btnClick()" class="btn btn-outline-danger" type="button" id="button-addon2">Search</button>
+            </div>
+            <!-- div for spinner  -->
+            <div id="spinner">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div id="show-result-number">
+
+            </div>
+            <!-- div for display result  -->
+            <div class="contaner" id="allResult">
+                <div class="row row-cols-1 row-cols-md-3 g-4"  id="show-result">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Section End  -->
+    <script src="./script.js"></script>
+</body>
+</html>
